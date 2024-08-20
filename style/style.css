@@ -1,11 +1,69 @@
 
 :root{
-    --color-primario: #17153b;   
-    --color-secundario: #2e236C;
-    --color-terciario: #433d8b;
-    --color-final: #c8acd6;
+    --color-primario: #7dcdc4;   
+    --color-secundario: #67c3d2;
+    --color-terciario: #4a4a4b;
+    --color-fondo: #f6f6f6;
     --fuente: 'Century Gothic';
 }
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 100px 0px 40px;
+    position: absolute;
+}
+
+    header.logo {
+        display: flex;
+        width: 64px;
+        height: 48px;
+        align-items: flex-start;
+    }
+
+main{
+    display: flex;
+    background: var(--color-fondo);
+    background-position: center;
+    background-size: cover;
+    flex-direction: row;
+}
+
+.texto__area{
+    background: transparent;
+    margin: 168px 0px 0px 240px;
+    width: 60%;
+}
+
+.texto__area__encriptar{
+    height: 288px;
+    font-weight: 400;
+    font-size: 32px;
+    width: 660px;
+    line-height: 48px;
+    border-radius: 15px;
+    border: 1px solid var(--color-secundario);
+    resize: none;
+}
+body{
+ height: 100%;   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente);
+    text-decoration: none;
+    background: var(--color-fondo);
+}
+::selection{
+    background: var(--color-terciario);
+    color: var(--color-fondo);
+}
+
 
 
 
