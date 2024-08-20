@@ -9,13 +9,38 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="./assets/Logo.png">
+        <img class="logo" src="./assets/Logo.png" alt="logo de alura">
     </header>
     <main>
         <section>
-            <textarea class="textoarea" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-            
+            <textarea class="texto__area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <img class="frame" src="/assets/Frame.png" alt="frame de informacion">
+            </div>
+            <div class="container__botones">
+                <button class="boton__encriptar" onclick="botonencriptar()">Encriptar</button>
+                <button class="boton__desencriptar" onclick="botondesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <div class="salida__encriptador">
+                <img class="Muñeco" src="./assets/Muñeco.png" alt="Muñeco">
+                <p class="texto__salida_p">Ningun mensaje fue encontrado</p>
+                <p class="texto__salida_s">Ingrese el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <textarea class="mensaje__salida" typeof="mensaje" readonly></textarea>
+            <button class="boton__copiar" type="submit">Copiar</button>
         </section>
     </main>
+    <footer class="footer">
+        <p>Desarrollado por Erik Jimenez Herrera</p>
+        <a href="https://github.com/Lordjimenez1">
+            <img src="./assets/icons8-github-96.png" alt="github">
+        </a>
+        <a href="https://linkedin.com/in/erik-jimenez-herrera">
+            <img src="./assets/icons8-linkedin-96.png" alt="linkedin">
+        </a>
+    </footer>
+    <script src="app.js"></script>
 </body>
 </html>
