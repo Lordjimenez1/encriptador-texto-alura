@@ -32,20 +32,67 @@ main{
 }
 
 .texto__area{
-    background: transparent;
+    background: none;
     margin: 168px 0px 0px 240px;
     width: 60%;
 }
 
+
 .texto__area__encriptar{
-    height: 288px;
-    font-weight: 400;
+    height: 48px;
+    font-weight: normal;
     font-size: 32px;
-    width: 660px;
+    width: 577px;
     line-height: 48px;
     border-radius: 15px;
-    border: 1px solid var(--color-secundario);
+    border: none;
     resize: none;
+}
+
+    .texto__area__encriptar::placeholder,:focus{
+        color: var(--color-terciario);
+    }
+
+.frame{
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    background:none;
+    flex-direction: row;
+    position: absolute;
+    gap: 8px;
+    top: 635px;
+}
+
+.container__botones{
+    flex-direction: row;
+    align-items: flex-start;
+    display: flex;
+    position:absolute;
+    gap: 24px;
+    top: 669px;
+    background: none;
+
+}
+
+.boton__encriptar{
+    font-style: normal;
+    text-align: center;
+    cursor: pointer;
+    height: 65px;
+    width: 328px;
+    background-color: var(--color-primario);
+    background: var(--color-primario);
+    border: 0.5px solid var(--color-terciario);
+    border-radius: 15px;
+    padding: 12px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: normal;
+    color: var(--color-terciario);
+}
+
+
 }
 body{
  height: 100%;   
