@@ -7,6 +7,13 @@
     --fuente: 'Century Gothic';
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente);
+    background: var(--color-fondo);
+}
+
 
 header{
     display: flex;
@@ -18,35 +25,35 @@ header{
 
     header.logo {
         display: flex;
-        width: 64px;
+        width: 50%;
         height: 48px;
         align-items: flex-start;
     }
 
+body{
+    box-sizing: border-box;
+    
+}
+
 main{
     display: flex;
     background: var(--color-fondo);
-    background-position: center;
-    background-size: cover;
-    flex-direction: row;
+    align-items: center;
 }
 
 .texto__area{
-    background: none;
-    margin: 168px 0px 0px 240px;
-    width: 60%;
+    display: flex;
+    margin: auto;
+
 }
 
 
+
 .texto__area__encriptar{
-    height: 48px;
+    padding: 168px 0px 0px 240px ;
     font-weight: normal;
     font-size: 32px;
-    width: 577px;
-    line-height: 48px;
     border-radius: 15px;
-    border: none;
-    resize: none;
 }
 
     .texto__area__encriptar::placeholder,:focus{
@@ -61,7 +68,7 @@ main{
     flex-direction: row;
     position: absolute;
     gap: 8px;
-    top: 635px;
+    top: 851px;
 }
 
 .container__botones{
@@ -70,7 +77,7 @@ main{
     display: flex;
     position:absolute;
     gap: 24px;
-    top: 669px;
+    top: 869px;
     background: none;
 
 }
@@ -85,30 +92,148 @@ main{
     background: var(--color-primario);
     border: 0.5px solid var(--color-terciario);
     border-radius: 15px;
-    padding: 12px;
     font-weight: normal;
     font-size: 16px;
     line-height: normal;
     color: var(--color-terciario);
 }
 
-body{
- height: 100%;   
+.boton__encriptar:hover{
+    background-color: var(--color-terciario);
+    color: var(--color-fondo);
+    transform: scale(0.95)
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--fuente);
-    text-decoration: none;
-    background: var(--color-fondo);
-}
-::selection{
+.boton__desencriptar{
+    font-style: normal;
+    text-align: center;
+    cursor: pointer;
+    height: 65px;
+    width: 328px;
+    background-color: var(--color-terciario);
     background: var(--color-terciario);
+    border: 1px solid var(--color-primario);
+    border-radius: 15px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: normal;
     color: var(--color-fondo);
 }
 
+.boton__desencriptar:hover{
+    background-color: var(--color-primario);
+    color: var(--color-terciario);
+    transform: scale(0.95)
+}
+
+.salida{
+    display: flex;
+    width:400px;
+    height: 944px;
+    flex-direction: column;
+    align-items: center;
+    border: 0.5px solid var(--color-primario);
+    border-radius: 32px;
+    margin: 32px;
+    justify-content: space-between;
+    
+}
+
+.salida__encriptador{
+    margin: auto;
+    margin-top: 50%;
+    background: var(--color-fondo);
+    width: 250px;
+}
+
+.muneco{
+    background: var(--color-fondo);
+    width: 100%;
+    height: auto;
+
+}
+
+.texto__salida_p{
+    font-style: normal;
+    font-size: 24px;
+    text-align: center;
+    color: var(--color-terciario);
+    background: var(--color-fondo);
+    line-height: 150%;
+    font-weight: bold;
+}
+
+.texto__salida_s{
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+    color: var(--color-terciario);
+    background: var(--color-fondo);
+    line-height: 150%;
+    font-weight: normal;
+}
+
+.mensaje__salida{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: normal;
+    color: var(--color-terciario);
+    background:transparent;
+}
+
+.mensaje__salida:focus{
+    outline: none;
+}
 
 
+.boton__copiar{
+    font-style: normal;
+    text-align: center;
+    cursor: pointer;
+    height: 65px;
+    width: 50%;
+    background-color: var(--color-fondo);
+    background: var(--color-fondo);
+    border: 0.5px solid var(--color-terciario);
+    border-radius: 15px;
+    padding: 12px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: normal;
+    color: var(--color-terciario);
+    position:relative;
+    margin: 32px;
+
+}
+
+.boton__copiar:hover{
+    background-color: var(--color-secundario);
+    color: var(--color-fondo);
+    border: var(--color-secundario);
+    transform: scale(0.95) ;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 24px;
+    background: var(--color-secundario);
+    background-color: var(--color-secundario);
+}
+
+.desarrollador{
+    color:black;
+    font-weight: bold;
+    font-size: 24px;
+    background: var(--color-secundario);
+}
+
+.iconos{
+    background: transparent;
+    width: auto;
+    height: auto;
+}
+
+.iconos:hover{
+    transform: scale(0.95);
+}
 
