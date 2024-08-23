@@ -18,7 +18,6 @@ body{
     box-sizing: border-box;
     background-color: var(--color-fondo);
     color: var(--color-fondo);
-    height: 100vh;
 }
 
 .header{
@@ -36,7 +35,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 10% 10%;
+    margin: 3% 3%;
     justify-content: space-evenly;
 }
 
@@ -49,7 +48,7 @@ body{
 
 .texto__area__encriptar{
     width:680px;
-    height: 288px;
+    height: 780px;
     font-size: 32px;
     font-family: var(--fuente);
     font-weight: normal;
@@ -101,5 +100,40 @@ body{
 }
 
 .salida{
-    
+    width: 370px;
+    height: 944px;
+    display: flex;
+    margin-top: 26px;
+    border-radius: 32px;
+    flex-direction: column;
+    border: 1px solid var(--color-primario);
+    gap: 32px;
+    position: relative;
+}
+
+.muneco{
+    display: flex;
+    background: transparent;
+    margin-top: 257px;
+}
+
+.texto__salida_p{
+    font-family: var(--fuente);
+    color: var(--color-terciario);
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+
+}
+
+.texto__salida_s{
+    font-family: var(--fuente);
+    color: var(--color-terciario);
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.mensaje__salida{
+
 }
