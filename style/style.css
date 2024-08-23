@@ -1,4 +1,3 @@
-
 :root{
     --color-primario: #7dcdc4;   
     --color-secundario: #67c3d2;
@@ -27,6 +26,7 @@ body{
 }
 
 .logo{
+    width: 20%;
    display: flex;
    align-items: flex-start;
 }
@@ -35,8 +35,9 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 3% 3%;
+    margin: 10% 10%;
     justify-content: space-evenly;
+    gap: 80px;
 }
 
 .texto__area{
@@ -48,8 +49,8 @@ body{
 
 .texto__area__encriptar{
     width:680px;
-    height: 780px;
-    font-size: 32px;
+    height: 680px;
+    font-size: 2rem;
     font-family: var(--fuente);
     font-weight: normal;
     border: none;
@@ -61,6 +62,7 @@ body{
 }
 .frame{
     display: flex;
+    width: 50%;
 }
 
 .container__botones{
@@ -76,30 +78,44 @@ body{
     border-radius: 24px;
     border: 0.5px solid var(--color-terciario);
     font-family: var(--fuente);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: normal;
     text-decoration: none;
     text-align: center;
     color: var(--color-terciario);
     cursor: pointer;
+}
+
+.boton__encriptar:hover{
+    background-color: var(--color-terciario);
+    color: var(--color-fondo);
+    border: 1px solid var(--color-primario);
+
 }
 
 .boton__desencriptar{
     width: 328px;
     height: 65px;
-    background-color: var(--color-primario);
+    background-color: var(--color-terciario);
     border-radius: 24px;
-    border: 0.5px solid var(--color-terciario);
+    border: 0.5px solid var(--color-primario);
     font-family: var(--fuente);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: normal;
     text-decoration: none;
     text-align: center;
-    color: var(--color-terciario);
+    color: var(--color-fondo);
     cursor: pointer;
 }
 
+.boton__desencriptar:hover{
+    background-color: var(--color-primario);
+    color: var(--color-terciario);
+    border: 1px solid var(--color-terciario);
+}
+
 .salida{
+    box-sizing: border-box;
     width: 370px;
     height: 944px;
     display: flex;
@@ -107,14 +123,16 @@ body{
     border-radius: 32px;
     flex-direction: column;
     border: 1px solid var(--color-primario);
-    gap: 32px;
+    gap: 43px;
     position: relative;
+    align-items: center;
 }
 
 .muneco{
     display: flex;
     background: transparent;
     margin-top: 257px;
+    width: 90%;
 }
 
 .texto__salida_p{
@@ -122,7 +140,7 @@ body{
     color: var(--color-terciario);
     text-align: center;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5rem;
 
 }
 
@@ -131,9 +149,129 @@ body{
     color: var(--color-terciario);
     text-align: center;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .mensaje__salida{
+    width: 100%;
+    height: 781px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border-radius: 32px;
+    border: none;
+    resize: none;
+}
 
+.boton__copiar{
+    width: 328px;
+    height: 65px;
+    background-color: var(--color-secundario);
+    border-radius: 24px;
+    border: 0.5px solid var(--color-terciario);
+    font-family: var(--fuente);
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-terciario);
+    cursor: pointer;
+    position: relative;
+
+}
+
+.boton__copiar:hover{
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+    border: 1px solid var(--color-secundario);
+}
+
+.footer{
+    display: flex;
+    background: var(--color-secundario);
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.desarrollador{
+    font-family: var(--fuente);
+    font-weight: normal;
+    font-size: 1.5rem;
+    background: transparent;
+    color: black;
+}
+
+.iconos{
+    background: transparent;
+}
+
+@media (max-width: 1250px ){
+    main{
+        flex-direction: column;
+        margin: 0%;
+    }
+
+    .salida{
+
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main {
+        flex-direction: column;
+        margin: 5% 10%;
+        gap: 40px;
+    }
+
+    .texto__area {
+        width: 100%;
+    }
+
+    .frame {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .header {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .main {
+        margin: 5%;
+        gap: 20px;
+    }
+
+    .texto__area__encriptar {
+        font-size: 1.5rem;
+        height: 500px;
+    }
+
+    .boton__encriptar, .boton__desencriptar, .boton__copiar {
+        max-width: 100%;
+    }
+
+    .salida {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        margin: 10px;
+        gap: 10px;
+    }
+
+    .texto__area__encriptar {
+        font-size: 1rem;
+        height: 300px;
+    }
+
+    .boton__encriptar, .boton__desencriptar, .boton__copiar {
+        height: 50px;
+    }
 }
