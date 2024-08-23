@@ -18,15 +18,17 @@
                 <img src="/assets/Frame.png" alt="frame de informacion">
             </div>
             <div class="container__botones">
-                <button class="boton__encriptar" onclick="botonencriptar()">Encriptar</button>
-                <button class="boton__desencriptar" onclick="botondesencriptar()">Desencriptar</button>
+                <button class="boton__encriptar" id="encriptar">Encriptar</button>
+                <button class="boton__desencriptar" id="desencriptar">Desencriptar</button>
             </div>
         </section>
         <section>
             <div class="salida">
+                <div class="remover">
                 <img class="muneco" src="./assets/Muñeco.png" alt="Muñeco">
                 <p class="texto__salida_p">Ningun mensaje fue encontrado</p>
                 <p class="texto__salida_s">Ingrese el texto que desees encriptar o desencriptar.</p>
+                </div>
                 <textarea class="mensaje__salida" typeof="mensaje" readonly></textarea>
                 <button class="boton__copiar" type="submit">Copiar</button>
             </div>
